@@ -1,0 +1,6 @@
+{
+  "name": "pi-skeleton",
+  "dependencies": {
+    "pi-lib": "latest"
+  }
+}

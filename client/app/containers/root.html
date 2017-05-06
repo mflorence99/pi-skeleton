@@ -1,0 +1,37 @@
+<main>
+
+  <aside [ngClass]="windowState | async">
+
+    <skel-sidebar fxFlexFill>
+    </skel-sidebar>
+
+  </aside>
+
+  <section [ngClass]="windowState | async">
+
+    <header
+      fxLayout="row"
+      fxLayoutAlign="space-between center">
+
+      <paper-icon-button
+        (click)="toggleSidebar()"
+        icon="menu">
+      </paper-icon-button>
+
+      <div class="title">
+        <code>pi-skeleton</code> Skeleton App for Cloning
+      </div>
+
+      <div>&nbsp;</div>
+
+    </header>
+
+    <div class="content">
+      <router-outlet></router-outlet>
+    </div>
+
+  </section>
+
+</main>
+
+<lib-polymer-app></lib-polymer-app>

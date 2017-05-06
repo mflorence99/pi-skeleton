@@ -1,0 +1,25 @@
+{
+  "name": "pi-skeleton",
+  "version": "0.0.10",
+  "license": "MIT",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "test": "ng test",
+    "lint": "ng lint",
+    "e2e": "ng e2e"
+  },
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mflorence99/pi-skeleton"
+  },
+  "dependencies": {
+    "pi-lib": "latest",
+    "uglify-js-harmony": "^2.7.5"
+  },
+  "devDependencies": {
+    "@angular/cli": "1.0.0"
+  }
+}
