@@ -10,7 +10,7 @@ export const reducers = {
   window: window.reducer
 };
 
-export interface AppState {
+export class AppState {
   gpio: gpio.GPIOPinsState;
   navigator: navigator.NavigatorState;
   router: router.RouterState;

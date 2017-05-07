@@ -1,6 +1,6 @@
 import * as gpio from '../actions/gpio-pins';
 
-export interface GPIOPinsState {
+export class GPIOPinsState {
   [pin: string]: boolean;
 };
 

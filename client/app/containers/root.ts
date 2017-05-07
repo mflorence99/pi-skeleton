@@ -13,7 +13,7 @@ import { config } from '../config';
 import { toggleSidebar } from 'pi-lib/actions/window';
 
 /**
- * pi-lib demo app root
+ * pi-skeleton demo app root
  */
 
 const MEDIA_SIZE_BREAKS: MediaSizeBreaks = {
@@ -45,8 +45,8 @@ export class RootComponent {
     this.windowState = store.select(state => state.window);
     // configure the app
     setTimeout(() => {
-      configurator.configureMediaSizeBreaks(MEDIA_SIZE_BREAKS);
-      configurator.configureNavigator(NAVIGATOR_ITEMS);
+      configurator.withMediaSizeBreaks(MEDIA_SIZE_BREAKS);
+      configurator.withNavigatorItems(NAVIGATOR_ITEMS);
     }, 0);
   }
 
