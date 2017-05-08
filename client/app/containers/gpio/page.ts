@@ -6,14 +6,12 @@ import { listen, unlisten } from '../../actions/gpio-pins';
 import { AppState } from '../../reducers';
 import { Observable } from 'rxjs/Observable';
 import { Store } from '@ngrx/store';
-import { flyInOut } from 'pi-lib/animations';
 
 /**
  * GPIO test page
  */
 
 @Component({
-  animations: [flyInOut()],
   selector: 'skel-gpio-page',
   styleUrls: ['page.less'],
   templateUrl: 'page.html'
