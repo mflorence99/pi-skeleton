@@ -26,9 +26,11 @@
 
     </header>
 
-    <div class="content">
+    <lib-route-animation
+      [routerState]="routerState | async"
+      class="content">
       <router-outlet></router-outlet>
-    </div>
+    </lib-route-animation>
 
   </section>
 

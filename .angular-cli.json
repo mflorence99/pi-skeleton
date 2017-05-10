@@ -8,9 +8,9 @@
       "root": "client",
       "outDir": "dist",
       "assets": [
-        "../node_modules/pi-lib/startup.html",
         "assets",
         "favicon.ico",
+        "startup.html",
         "vulcanized.html"
       ],
       "index": "home.html",

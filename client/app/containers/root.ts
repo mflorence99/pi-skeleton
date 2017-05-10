@@ -1,3 +1,4 @@
+import * as router from '@ngrx/router-store';
 import * as window from 'pi-lib/reducers/window';
 
 import { ChangeDetectionStrategy, Component } from '@angular/core';
@@ -35,6 +36,7 @@ const NAVIGATOR_ITEMS: NavigatorItem[] = [
 
 @AutoUnsubscribe()
 export class RootComponent {
+  routerState: Observable<router.RouterState>;
   windowState: Observable<window.WindowState>;
 
   /** ctor */
@@ -42,6 +44,7 @@ export class RootComponent {
               env: EnvService,
               private store: Store<AppState>) {
     console.log('<lib-root> loading', config, env);
+    this.routerState = store.select(state => state.router);
     this.windowState = store.select(state => state.window);
     // configure the app
     setTimeout(() => {
