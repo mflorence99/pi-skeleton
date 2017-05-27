@@ -43,7 +43,7 @@ export class RootComponent {
   constructor(configurator: ConfiguratorService,
               env: EnvService,
               private store: Store<AppState>) {
-    console.log('<lib-root> loading', config, env);
+    console.log('<skel-root> loading', config, env);
     this.routerState = store.select(state => state.router);
     this.windowState = store.select(state => state.window);
     // configure the app
